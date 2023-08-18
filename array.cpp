@@ -1,26 +1,15 @@
 #include <iostream>
 using namespace std;
-
-int getMax(int num[], int n)
+void update(int arr[], int n)
 {
-    int max = INT_MIN;
-    for (int i = 0; i < n; i++)
-    {
-        if (num[i]) > max)
-            {
-                max = num[i];
-            }
-    }
-    return max;
 }
 int main()
 {
-    int size;
-    cin >> size;
-    int num[100];
-    for (int i = 0; i <= size; i++)
+    int arr[3] = {1, 2, 3};
+    update(arr, 3);
+    for (int i = 0; i < 3; i++)
     {
-        cin >> num[i];
+        cout << arr[i] << " ";
     }
     return 0;
 }
